@@ -5,7 +5,7 @@ import Author from "./models/author.js";
 const requireAuth = (req, res, next) => {
   const token = req.cookies.jwt;
   if (token) {
-    jwt.verify(token, process.env.JWT_SECRET_KEY, (err, decodedToken) => {
+    jwt.verify(token, "Lamiaa Abdelmonaem Ibrahim Gabriel", (err, decodedToken) => {
       if (err) res.redirect("/login");
       else next();
     });
@@ -17,7 +17,7 @@ const requireAuth = (req, res, next) => {
 const checkCurrentAuthor = async (req, res, next) => {
   const token = req.cookies.jwt;
   if (token) {
-    const result = await jwt.verify(token, process.env.JWT_SECRET_KEY, async (err, decodedToken) => {
+    const result = await jwt.verify(token, "Lamiaa Abdelmonaem Ibrahim Gabriel", async (err, decodedToken) => {
       if(err) return { errors: err.message }
       return decodedToken
     });

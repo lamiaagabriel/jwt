@@ -17,7 +17,7 @@ const router = express.Router();
 // expiresIn: 3 days * 24h * 60m * 60s; in sec
 const threeDays = 3 * 24 * 60 * 60;
 const createToken = (id) =>
-  jwt.sign({ id }, process.env.JWT_SECRET_KEY, {
+  jwt.sign({ id }, "Lamiaa Abdelmonaem Ibrahim Gabriel", {
     // Option Object
     expiresIn: threeDays, // in seconds
   });

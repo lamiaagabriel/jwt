@@ -5,7 +5,7 @@ import { config } from "dotenv";
 config();
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3001;
 
 // Middleware: Invoke the methods to be used
 app.use(express.json());
@@ -16,7 +16,7 @@ app.set("view engine", "ejs");
 
 // Connect Database
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect("mongodb+srv://jwt-node:jwt-node@jwt-node.xqu9plh.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
     app.listen(PORT, () =>
       console.log(
