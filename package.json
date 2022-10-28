@@ -1,0 +1,22 @@
+{
+  "name": "JWT",
+  "version": "1.0.0",
+  "description": "Get a Secure APIs, using Nodejs, Express, Mongoose",
+  "main": "server.js",
+  "author": "Lamiaa Gabriel",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": "14.x" },
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "validator": "^13.7.0"
+  }
+}

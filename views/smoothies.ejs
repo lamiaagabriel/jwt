@@ -1,0 +1,7 @@
+<%- include('./partials/header.ejs') %>
+<% if (author) { %>
+    <h1 class="text-3xl font-bold mb-10 text-center">Smoothies Page</h1>
+    <h1>Only Admins Can Access This Page</h1>
+    <h3>Accessed By: <span class="text-main font-bold"><%= author %></h3>
+<% } %>
+<%- include('./partials/footer.ejs') %>

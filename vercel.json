@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "JWT",
+    "builds": [
+       { "src": "server.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+       { "src": "/(.*)", "dest": "/" }
+    ]
+ }
