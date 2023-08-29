@@ -36,11 +36,9 @@ mongoose
     app.listen(port, () => {
       console.log(
         `🔥 server is listening${
-          // process.env.NODE_ENV === "development"
-          //   ?
-
-          ` at port: http://${host}:${port}`
-          // : "."
+          process.env.NODE_ENV === "development"
+            ? ` at port: http://${host}:${port}`
+            : "."
         }`
       )
 
