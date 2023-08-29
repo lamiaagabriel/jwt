@@ -2,12 +2,14 @@
   "name": "JWT",
   "version": "1.0.0",
   "description": "Get a Secure APIs, using Nodejs, Express, Mongoose",
-  "main": "server.js",
+  "main": "src/index.js",
   "author": "Lamiaa Gabriel",
   "license": "MIT",
   "type": "module",
-  "engines": { "node": "14.x" },
-  "scripts": { "start": "node server.js" },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cookie-parser": "^1.4.6",
